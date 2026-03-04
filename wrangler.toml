@@ -1,0 +1,15 @@
+name = "family-memory"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "family-memory"
+database_id = "placeholder-create-with-wrangler-d1-create"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "family-memory"
+
+[vars]
+ENVIRONMENT = "production"

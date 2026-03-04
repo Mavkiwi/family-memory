@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #fafaf9;
+  --color-foreground: #1c1917;
+  --color-muted: #e7e5e4;
+  --color-muted-foreground: #78716c;
+  --color-primary: #7c3aed;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f5f5f4;
+  --color-secondary-foreground: #1c1917;
+  --color-accent: #f59e0b;
+  --color-accent-foreground: #1c1917;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #d6d3d1;
+  --color-input: #d6d3d1;
+  --color-ring: #7c3aed;
+  --color-card: #ffffff;
+  --color-card-foreground: #1c1917;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Theme colours per question category */
+  --color-theme-childhood: #f59e0b;
+  --color-theme-family: #ec4899;
+  --color-theme-career: #3b82f6;
+  --color-theme-wisdom: #8b5cf6;
+  --color-theme-traditions: #10b981;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+@keyframes recording-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-recording-pulse {
+  animation: recording-pulse 1.5s ease-in-out infinite;
+}
